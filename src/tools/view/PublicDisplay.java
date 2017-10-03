@@ -13,7 +13,7 @@ public class PublicDisplay
 	 * Displays a popup showing the supplied String to the user.
 	 * @param textToDisplay The text to be displayed
 	 */
-	public void displayTet(String textToDisplay)
+	public void displayText(String textToDisplay)
 	{
 		JOptionPane.showMessageDialog(null, textToDisplay);
 	}
