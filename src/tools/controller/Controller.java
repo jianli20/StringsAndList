@@ -6,12 +6,12 @@ import tools.model.Kahoot;
 import tools.view.PublicDisplay;
 
 
-public class ListController
+public class Controller
 {
 	private List<Kahoot> myKahoots;
 	private PublicDisplay popup; 
 	
-	public ListController()
+	public Controller()
 	{
 		myKahoots = new ArrayList<Kahoot>();
 		popup = new PublicDisplay();
@@ -25,7 +25,7 @@ public class ListController
 		fillTheList();
 //		showTheList();
 		changeTheList();
-		practiceList();
+//		practiceList();
 	}
 	
 	private void showTheList()

@@ -4,7 +4,7 @@ public class ListRunner
 {
 	public static void main (String [] args)
 	{
-		ListController app = new ListController();
+		Controller app = new Controller();
 		app.start();
 	}
 }
