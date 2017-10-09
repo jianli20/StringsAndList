@@ -25,7 +25,7 @@ public class Controller
 		fillTheList();
 //		showTheList();
 		changeTheList();
-//		practiceList();
+		practiceList();
 	}
 	
 	private void showTheList()
@@ -95,23 +95,23 @@ public class Controller
 	removed = myKahoots.set(2, new Kahoot());
 	popup.displayText("The kahoot by " + removed.getCreator() + " was repalced with on by: " +myKahoots.get(2).getCreator());
 	}
-//  private void practiceList()
-//	{
-//		Kahoot myColors = new Kahoot("Jian", 2, " My sweatshirt colors");
-//
-//		myKahoots.add(myColors);
-//		Kahoot remove = myKahoots.remove(5);
-//		popup.displayText("I removed the kahoot made by " + remove.getCreator());
-//		popup.displayText("The list now has " + myKahoots.size() + "items inside.");
-//		
-//		
-//		
-//		String getList = popup.getResponse("What list would you like to remove?");
-//		myKahoots.setName(getList);
-//		popup.displayText("You just got the " + myKahoots.get(5).toString() + "item on the list");
-//		
-//		
-//  }
+  private void practiceList()
+	{
+		Kahoot myColors = new Kahoot("Jian", 2, " My sweatshirt colors");
+
+		myKahoots.add(myColors);
+		Kahoot remove = myKahoots.remove(5);
+		popup.displayText("I removed the kahoot made by " + remove.getCreator());
+		popup.displayText("The list now has " + myKahoots.size() + " items inside.");
+		
+		
+		
+		String getList = popup.getResponse("What list would you like to remove?");
+		myKahoots.remove(getList);
+		popup.displayText(" Removed item: " + getList + " from the list");
+		
+		
+  }
 
 	public PublicDisplay getPopup()
 	{
