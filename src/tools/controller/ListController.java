@@ -104,7 +104,9 @@ public class ListController
 		popup.displayText("I removed the kahoot made by " + remove.getCreator());
 		popup.displayText("The list now has " + myKahoots.size() + "items inside.");
 		
-
+		
+		popup.displayText("You just got the " + myKahoots.get(5).toString() + "item on the list");
+		
 		
 	}
 	
