@@ -25,6 +25,7 @@ public class ListController
 		fillTheList();
 //		showTheList();
 		changeTheList();
+		practiceList();
 	}
 	
 	private void showTheList()
@@ -43,7 +44,7 @@ public class ListController
 			{
 				for (int loop = 0; loop < 5; loop += 1)
 				{
-					popup.displayText("wow nobby does a lot");
+					popup.displayText("wow nobody does a lot");
 				}
 			}
 		
@@ -82,6 +83,7 @@ public class ListController
 	}
 	
 	private void changeTheList()
+
 	{
 	popup.displayText("The current list size is: " + myKahoots.size());
 	Kahoot removed = myKahoots.remove(3);
@@ -93,5 +95,19 @@ public class ListController
 	removed = myKahoots.set(2, new Kahoot());
 	popup.displayText("The kahoot by " + removed.getCreator() + " was repalced with on by: " +myKahoots.get(2).getCreator());
 	}
+	private void practiceList()
+	{
+		Kahoot myColors = new Kahoot("Jian", 2, " My sweatshirt colors");
+
+		myKahoots.add(myColors);
+		Kahoot remove = myKahoots.remove(5);
+		popup.displayText("I removed the kahoot made by " + remove.getCreator());
+		popup.displayText("The list now has " + myKahoots.size() + "items inside.");
+		
+
+		
+	}
+	
 }
+	
 
